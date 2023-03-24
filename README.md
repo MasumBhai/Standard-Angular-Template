@@ -1,27 +1,25 @@
-# StandardTemplate
+# Standard Angular Template
+This template can be used to kick start your journey to build scalable, optimized angular project for production. <br/>
+You can find medium blog article of mine on building this angular project from scratch to deployment in Microsoft Azure with docker image.</br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Hosted on Microsoft Azure
+demo link :  
 
-## Development server
+## Docker Image on Docker Hub
+```bash
+docker pull masum035/standard_angular_template
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Standard Angular Template : part - 1
+<a href="" target="_blank">In this part - 1</a>, I discussed configuring this angular project. 
+### Standard Angular Template : part - 2
+<a href="https://medium.com/@abdullah-al-masum/393c1dfc4a83?source=friends_link&sk=35874aa96fe9581828cba45f8c00e5b9" target="_blank">In this part - 2</a>, I discussed building this angular application step-by-step maintaining code quality & secret management.
+### Standard Angular Template : part - 3
+<a href="" target="_blank">In this part - 3</a>, I discussed optimizing this angular application, docker image creation & deployment to Microsoft Azure platform.
 
-## Code scaffolding
+## How to run this project in your local machine?
+Just download or clone this repository and run ```npm install``` or ```yarn install``` <br/>
+Boom!! you are ready to go...
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### feedback 
+You can reach me via email: <a href="mailto:abdullahmasum6035@gmail.com" target="_blank">abdullahmasum6035@gmail.com</a> or you can knock me on linkedIn id: <a href="https://www.linkedin.com/in/masum035/" target="_blank">masum035</a>. I will be happy to connect with you.

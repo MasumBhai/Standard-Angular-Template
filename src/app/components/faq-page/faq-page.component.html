@@ -1,0 +1,129 @@
+<section class="min-h-screen text-gray-700 bg-white dark:bg-gray-900 ">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="mb-20 text-center">
+      <h1 class="mb-1 text-2xl font-bold text-center text-gray-800 sm:text-3xl title-font dark:text-white">
+        Frequently Asked Questions
+      </h1>
+      <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 dark:text-gray-300">
+        The most common questions about how our <span class="border-b-4 border-yellow-400">application</span>
+        works.
+      </p>
+      <div class="flex items-center justify-center">
+        <ng-lottie
+          height="200px"
+          width="200px"
+          [options]="options_lottie_faq"
+          (animationCreated)="onAnimate($event)">
+        </ng-lottie>
+      </div>
+    </div>
+    <div class="w-full flex justify-center flex-wrap  sm:mx-auto sm:mb-2">
+      <div class="w-full px-4 py-2 lg:w-1/2">
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            What is routing in Angular?
+          </summary>
+
+          <p class="px-4 py-2">
+            Routing in Angular refers to the process of mapping URLs to specific component views within your
+            application. This allows users to navigate between different pages or views within your application.
+          </p>
+        </details>
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            How can I handle errors when using observables in Angular?
+          </summary>
+
+          <p class="px-4 py-2">
+            You can handle errors in observables in Angular by subscribing to the observable and handling any errors in
+            the subscribe callback function. You can also use the catchError operator to catch errors and handle them in
+            a more granular way.
+          </p>
+        </details>
+
+      </div>
+      <div class="w-full px-4 py-2 lg:w-1/2">
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            How do I use services in my Angular project?
+          </summary>
+
+          <p class="px-4 py-2">
+            You can create a service in Angular by generating a new service file using the Angular CLI command "ng
+            generate service". Once you've created the service, you can inject it into your components or other services
+            as needed.
+          </p>
+        </details>
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            What is an observable in Angular?
+          </summary>
+
+          <p class="px-4 py-2">
+            An observable is a data stream that allows you to asynchronously receive and process data over time. In
+            Angular, observables are often used with HTTP requests to handle asynchronous data fetching.
+          </p>
+        </details>
+
+      </div>
+      <div class="w-full px-4 py-2 lg:w-1/2">
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            How can I test my Angular components and services?
+          </summary>
+
+          <p class="px-4 py-2">
+            You can test your Angular components and services using tools like Karma and Jasmine. These testing
+            frameworks allow you to write unit tests for individual components or services and ensure that they're
+            working correctly.
+          </p>
+        </details>
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            How to add animations in Angular project?
+          </summary>
+
+          <p class="px-4 py-2">
+            You can add animations to your Angular application by using the Angular Animations library, which provides a
+            set of pre-built animation functions and allows you to create custom animations using keyframes and
+            transitions.
+          </p>
+        </details>
+
+      </div>
+      <div class="w-full px-4 py-2 lg:w-1/2">
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            What is dependency injection in Angular?
+          </summary>
+
+          <p class="px-4 py-2">
+            Dependency injection in Angular is a design pattern that allows you to inject dependencies into your
+            components or services rather than manually creating them. This makes it easier to manage complex
+            applications and promotes code reusability.
+          </p>
+        </details>
+
+        <details class="mb-4 bg-gray-100">
+          <summary class="px-4 py-2 font-semibold bg-gray-300 rounded-md cursor-pointer">
+            How do I handle authentication in my Angular project?
+          </summary>
+
+          <p class="px-4 py-2">
+            Authentication in Angular can be handled using various methods such as JSON Web Tokens (JWT) or OAuth 2.0.
+            You can use the Angular HTTP client to send authentication requests to your backend API and store the
+            resulting token in local storage.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>

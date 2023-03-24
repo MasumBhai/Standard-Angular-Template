@@ -1,0 +1,115 @@
+<div class="bg-white dark:bg-gray-800 ">
+
+  <div class="lg:flex lg:items-center lg:justify-between w-full mx-auto px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+
+    <div class="flex items-center justify-center">
+      <ng-lottie
+        height="300px"
+        width="300px"
+        [options]="options_lottie_thinking"
+        (animationCreated)="onAnimate($event)">
+      </ng-lottie>
+    </div>
+
+    <h2
+      class="font-sans text-2xl font-semibold tracking-tight md:leading-tight text-black dark:text-white sm:text-4xl">
+            <span class="block">
+                A World Where Everything is Open Source
+            </span>
+      <span class="block text-primary dark:text-blue-600">
+                Just Click to Get Some Facts & Quotes
+            </span>
+    </h2>
+    <div class="lg:mt-0 lg:flex-shrink-0">
+      <div class=" inline-flex rounded-md shadow">
+        <button type="button" (click)="changeQuote()"
+                class="py-4 px-6  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          Get Quotes
+        </button>
+      </div>
+      <div class="inline-flex ml-3 rounded-md shadow">
+        <button type="button" (click)="changeFactItems()"
+                class="py-4 px-6  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          Get Facts
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="px-4 mx-auto max-w-7xl">
+    <div class="w-full mx-auto md:w-5/6" *ngFor="let item of quotes$ | async">
+      <div class="flex items-center justify-start md:justify-center">
+        <div class="ml-4">
+          <p class="mb-2 text-s font-semibold tracking-widest text-gray-800 dark:text-gray-400">{{ item.author }}</p>
+          <!--          <p class="text-xs font-semibold tracking-widest text-gray-500 uppercase">category: {{ item.category }}</p>-->
+        </div>
+      </div>
+
+      <div class="text-left md:text-center">
+        <h1 class="mb-10 font-serif text-xl italic font-thin text-gray-800 dark:text-gray-300 md:leading-snug md:text-3xl">
+          “{{ item.quote }}”
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex items-center justify-center">
+    <ng-lottie
+      height="300px"
+      width="300px"
+      [options]="options_lottie_eye"
+      (animationCreated)="onAnimate($event)">
+    </ng-lottie>
+  </div>
+
+  <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+      <!-- Column -->
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2" *ngFor="let item of fact1$ | async">
+
+        <!-- Article -->
+        <article
+          class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+        >
+          <div class="rounded-[10px] bg-white p-4 !pt-10 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              Do you know?
+            </time>
+
+            <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+              {{item.fact}}
+            </h3>
+          </div>
+        </article>
+        <!-- END Article -->
+
+      </div>
+      <!-- END Column -->
+
+      <!-- Column -->
+      <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2" *ngFor="let item of fact2$ | async">
+
+        <!-- Article -->
+        <article
+          class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:animate-background hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]"
+        >
+          <div class="rounded-[10px] bg-white p-4 !pt-10 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              Do you know?
+            </time>
+
+            <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+              {{item.fact}}
+            </h3>
+          </div>
+        </article>
+        <!-- END Article -->
+
+      </div>
+      <!-- END Column -->
+
+    </div>
+  </div>
+
+</div>

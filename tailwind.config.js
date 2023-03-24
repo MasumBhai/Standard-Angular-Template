@@ -16,6 +16,7 @@ module.exports = {
     require("kutty"),
     require('tw-elements/dist/plugin'),
     require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp')
   ],
   future: {
     purgeLayersByDefault: true,
